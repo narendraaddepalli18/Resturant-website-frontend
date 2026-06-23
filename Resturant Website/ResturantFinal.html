@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANL Restaurant</title>
+
+<link rel="icon" type="image/png" href="restLogo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="restLogo.png" alt="ANL Restaurant">
+      <span class="logo-text">ANL</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#cart" class="cart-link"><i class="fa-solid fa-bag-shopping"></i> Cart</a></li>
+    </ul>
+
+    <button class="book-btn">Book Table</button>
+
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="overlay">
+    <div class="hero-content">
+
+      <p class="eyebrow">Hyderabad's House of Flavor</p>
+
+      <div class="heading-row">
+        <div class="medallion medallion-left">
+          <div class="medallion-ring">
+            <svg class="medallion-spin" viewBox="0 0 150 150">
+              <defs>
+                <path id="medallionPathLeft" d="M 75,75 m -63,0 a 63,63 0 1,1 126,0 a 63,63 0 1,1 -126,0" />
+              </defs>
+              <text>
+                <textPath href="#medallionPathLeft" startOffset="0%">
+                  WELCOME TO ANL &#8226; WELCOME TO ANL &#8226;
+                </textPath>
+              </text>
+            </svg>
+            <div class="medallion-core">
+              <img src="restLogo.png" alt="ANL crest">
+            </div>
+          </div>
+        </div>
+
+        <h1>
+          Experience
+          <span>Authentic Taste</span>
+        </h1>
+
+        <div class="medallion medallion-right">
+          <div class="medallion-ring medallion-ring--reverse">
+            <svg class="medallion-spin medallion-spin--reverse" viewBox="0 0 150 150">
+              <defs>
+                <path id="medallionPathRight" d="M 75,75 m -63,0 a 63,63 0 1,1 126,0 a 63,63 0 1,1 -126,0" />
+              </defs>
+              <text>
+                <textPath href="#medallionPathRight" startOffset="0%">
+                  FRESH DAILY &#8226; SLOW COOKED &#8226;
+                </textPath>
+              </text>
+            </svg>
+            <div class="medallion-core medallion-core--red">
+              <img src="right.png" alt="Chef's mark">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="hero-sub">Extraordinary Flavors &#8226; Fresh Ingredients &#8226; Recipes Passed Down for Generations</p>
+
+      <div class="features">
+        <div class="feature"><i class="fa-solid fa-fire"></i> Authentic Taste</div>
+        <div class="feature"><i class="fa-solid fa-star"></i> Unforgettable Moments</div>
+      </div>
+
+      <div class="hero-actions">
+        <button class="btn-primary">Order Now</button>
+        <a href="#menu" class="btn-ghost">View Menu</a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to learn more">
+      <span></span>
+    </a>
+  </div>
+</section>
+
+<section id="about">
+  <p class="section-eyebrow">Our Story</p>
+  <h2>About Us</h2>
+  <div class="about-grid">
+    <p>
+      We bring traditional Hyderabadi flavors with a modern touch &mdash; fresh ingredients,
+      expert chefs, and recipes that have simmered in our family kitchen for three generations.
+      Every dish on this menu carries a story, from the first dum biryani we ever served to
+      the haleem that now draws people across the city.
+    </p>
+    <div class="about-stats">
+      <div class="stat"><strong>25+</strong><span>Years of Flavor</span></div>
+      <div class="stat"><strong>40+</strong><span>Signature Dishes</span></div>
+      <div class="stat"><strong>10k+</strong><span>Happy Guests</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu-section">
+  <p class="section-eyebrow">Most Loved</p>
+  <h2>Popular Dishes</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="card-img"><img src="biryani.jpg" alt="Hyderabad Dum Biryani"></div>
+      <div class="card-body">
+        <h3>Hyderabad Dum Biryani</h3>
+        <div class="card-footer"><span class="price">&#8377;299</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="haleem.jpg" alt="Mutton Haleem"></div>
+      <div class="card-body">
+        <h3>Mutton Haleem</h3>
+        <div class="card-footer"><span class="price">&#8377;249</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="kebab.jpg" alt="Chicken Kebab"></div>
+      <div class="card-body">
+        <h3>Chicken Kebab</h3>
+        <div class="card-footer"><span class="price">&#8377;199</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="kodi vepudu.jpg" alt="kodi vepudu"></div>
+      <div class="card-body">
+        <h3>kodi vepudu</h3>
+        <div class="card-footer"><span class="price">&#8377;149</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="desert.jpg" alt="Dessert"></div>
+      <div class="card-body">
+        <h3>Dessert</h3>
+        <div class="card-footer"><span class="price">&#8377;149</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="royyala iguru.jpg" alt="royyala iguru"></div>
+      <div class="card-body">
+        <h3>royyala iguru</h3>
+        <div class="card-footer"><span class="price">&#8377;99</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="osmania.jpg" alt="Osmania Biscuitt"></div>
+      <div class="card-body">
+        <h3>Osmania Biscuitt</h3>
+        <div class="card-footer"><span class="price">&#8377;129</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="gongura.jpg" alt="Gongura Mutton"></div>
+      <div class="card-body">
+        <h3>Gongura Mutton</h3>
+        <div class="card-footer"><span class="price">&#8377;129</span><button>Add</button></div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section id="menu-veg" class="menu-section alt-bg">
+  <p class="section-eyebrow">Garden Fresh</p>
+  <h2>Veg Starters</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="card-img"><img src="PaneerThikks.jpg" alt="Paneer Tikka"></div>
+      <div class="card-body">
+        <h3>Paneer Tikka</h3>
+        <div class="card-footer"><span class="price">&#8377;180</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="veg Manchurian.jpg" alt="Veg Manchurian"></div>
+      <div class="card-body">
+        <h3>Veg Manchurian</h3>
+        <div class="card-footer"><span class="price">&#8377;150</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="kabab.jpg" alt="Hara Bhara Kabab"></div>
+      <div class="card-body">
+        <h3>Hara Bhara Kabab</h3>
+        <div class="card-footer"><span class="price">&#8377;180</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="4th.jpg" alt="Crispy Corn"></div>
+      <div class="card-body">
+        <h3>Crispy Corn</h3>
+        <div class="card-footer"><span class="price">&#8377;99</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="spring.jpg" alt="Veg Spring Rolls"></div>
+      <div class="card-body">
+        <h3>Veg Spring Rolls</h3>
+        <div class="card-footer"><span class="price">&#8377;59</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="v6.jpg" alt="Mushroom 65"></div>
+      <div class="card-body">
+        <h3>Mushroom 65</h3>
+        <div class="card-footer"><span class="price">&#8377;199</span><button>Add</button></div>
+      </div>
+      </div>
+    <div class="card">
+      <div class="card-img"><img src="vegseeba.jpg" alt="Veg Seekh Kebab"></div>
+      <div class="card-body">
+        <h3>Veg Seekh Kebab</h3>
+        <div class="card-footer"><span class="price">&#8377;189</span><button>Add</button></div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-img"><img src="mushroom.jpg" alt="crispy corn"></div>
+      <div class="card-body">
+        <h3>Mushroom Pepper Fry</h3>
+        <div class="card-footer"><span class="price">&#8377;189</span><button>Add</button></div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section id="menu-nonveg" class="menu-section">
+  <p class="section-eyebrow">Fire &amp; Spice</p>
+  <h2>Non-Veg Starters</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="card-img"><img src="chicken 65.jpg" alt="Chicken 65"></div>
+      <div class="card-body">
+        <h3>Chicken 65</h3>
+        <div class="card-footer"><span class="price">&#8377;199</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="3.jpg" alt="Tandoori Chicken"></div>
+      <div class="card-body">
+        <h3>Tandoori Chicken</h3>
+        <div class="card-footer"><span class="price">&#8377;180</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="4.jpg" alt="Chicken Lollipop"></div>
+      <div class="card-body">
+        <h3>Chicken Lollipop</h3>
+        <div class="card-footer"><span class="price">&#8377;139</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="5.jpg" alt="Seekh Kebab"></div>
+      <div class="card-body">
+        <h3>Seekh Kebab</h3>
+        <div class="card-footer"><span class="price">&#8377;159</span><button>Add</button></div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-img"><img src="2.jpg" alt="Tandoori Chicken"></div>
+      <div class="card-body">
+        <h3>Tandoori Chicken</h3>
+        <div class="card-footer"><span class="price">&#8377;180</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="nv6.jpg" alt="Apollo Fish"></div>
+      <div class="card-body">
+        <h3>Apollo Fish</h3>
+        <div class="card-footer"><span class="price">&#8377;199</span><button>Add</button></div>
+      </div>
+    </div>
+ <div class="card">
+      <div class="card-img"><img src="mutton.jpg" alt="  Mutton Ghee Roast"></div>
+      <div class="card-body">
+        <h3>  Mutton Ghee Roast</h3>
+        <div class="card-footer"><span class="price">&#8377;199</span><button>Add</button></div>
+      </div>
+    </div>
+  <div class="card">
+      <div class="card-img"><img src="prwan.jpg" alt=" Prawn Pepper Fry"></div>
+      <div class="card-body">
+        <h3>  Prawn Pepper Fry</h3>
+        <div class="card-footer"><span class="price">&#8377;199</span><button>Add</button></div>
+      </div>
+    </div>
+  
+  </div>
+</section>
+
+<section id="menu-desserts" class="menu-section alt-bg">
+  <p class="section-eyebrow">Something Sweet</p>
+  <h2>Desserts</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="card-img"><img src="gulabjamu.jpg" alt="Gulab Jamun"></div>
+      <div class="card-body">
+        <h3>Gulab Jamun</h3>
+        <div class="card-footer"><span class="price">&#8377;99</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="rasaimalai.jpg" alt="Rasmalai"></div>
+      <div class="card-body">
+        <h3>Rasmalai</h3>
+        <div class="card-footer"><span class="price">&#8377;49</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="s3.jpg" alt="Double Ka Meetha"></div>
+      <div class="card-body">
+        <h3>Double Ka Meetha</h3>
+        <div class="card-footer"><span class="price">&#8377;180</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="s4.jpg" alt="Qubani Ka Meetha"></div>
+      <div class="card-body">
+        <h3>Qubani Ka Meetha</h3>
+        <div class="card-footer"><span class="price">&#8377;99</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="s5.jpg" alt="Kulfi Falooda"></div>
+      <div class="card-body">
+        <h3>Kulfi Falooda</h3>
+        <div class="card-footer"><span class="price">&#8377;99</span><button>Add</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img"><img src="s6.jpg" alt="Gajar Ka Halwa"></div>
+      <div class="card-body">
+        <h3>Gajar Ka Halwa</h3>
+        <div class="card-footer"><span class="price">&#8377;99</span><button>Add</button></div>
+      </div>
+    </div>
+     <div class="card">
+      <div class="card-img"><img src="faloda.jpg" alt="Kulfi Falooda 🇮🇳"></div>
+      <div class="card-body">
+        <h3>Kulfi Falooda 🇮🇳</h3>
+        <div class="card-footer"><span class="price">&#8377;99</span><button>Add</button></div>
+      </div>
+    </div>
+   <div class="card">
+      <div class="card-img"><img src="kulfi.jpg" alt="Rabri Kulfi"></div>
+      <div class="card-body">
+        <h3>Rabri Kulfi</h3>
+        <div class="card-footer"><span class="price">&#8377;99</span><button>Add</button></div>
+      </div>
+    </div>
+  
+  </div>
+</section>
+
+<section id="gallery">
+  <p class="section-eyebrow">A Glimpse Inside</p>
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="g1.jpg" alt="Gallery photo 1">
+    <img src="g2.jpg" alt="Gallery photo 2">
+    <img src="g3.jpg" alt="Gallery photo 3">
+    <img src="g4.jpg" alt="Gallery photo 4">
+    <img src="g5.jpg" alt="Gallery photo 5">
+    <img src="g6.jpg" alt="Gallery photo 6">
+    <img src="gallery.jpg" alt="Gallery photo 6">
+    <img src="gallery2.jpg" alt="Gallery photo 6">
+  </div>
+</section>
+
+<section id="contact">
+  <p class="section-eyebrow">Join Us</p>
+  <h2>Reserve Your Table</h2>
+  <form>
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <div class="form-row">
+      <input type="date" required>
+      <input type="time" required>
+    </div>
+    <input type="number" placeholder="Guests" min="1" max="20">
+    <button type="submit">Reserve</button>
+  </form>
+</section>
+
+<footer>
+  <div class="footer-brand">
+    <img src="restLogo.png" alt="ANL Restaurant">
+    <p>&copy; 2026 ANL Food Paradise</p>
+  </div>
+  <div class="footer-social">
+    <a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://x.com" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+  </div>
+</footer>
+
+<div id="preloader">
+  <div class="loader-content">
+    <div class="meal-scene">
+      <div class="plate">
+        <div class="food"></div>
+      </div>
+      <div class="person">
+        <div class="head">
+          <div class="mouth"></div>
+        </div>
+        <div class="body"></div>
+        <div class="arm arm-left"></div>
+        <div class="arm arm-right"></div>
+        <div class="fork"></div>
+      </div>
+    </div>
+    <div class="kitchen-scene">
+      <div class="kitchen-plate">
+        <div class="steam steam-1"></div>
+        <div class="steam steam-2"></div>
+        <div class="steam steam-3"></div>
+      </div>
+      <div class="spoon"></div>
+    </div>
+    <h1>ANL Restaurant</h1>
+    <p>"Where Every Meal Becomes a Memorable Experience"</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
